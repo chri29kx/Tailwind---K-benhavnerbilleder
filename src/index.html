@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Serif:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Vite App</title>
   </head>
   <body class="grid place-items-center">
@@ -11,10 +17,15 @@
       <div
         class="text-white absolute flex h-full w-full flex-col items-center justify-center"
       >
-        <h1 class="text-2xl">
+        <h1 class="text-s justify-center text-White">
           Københavnerbilleder - en guide til hipster foto
         </h1>
-        <h2>af Sten Simons</h2>
+        <h2 class="pb-6 text-White">af Sten Simons</h2>
+        <button
+          class="rounded rounded-full bg-Darker_Grey py-2 px-4 font-bold tracking-wide text-White hover:bg-White hover:text-Darker_Grey"
+        >
+          Køb nu
+        </button>
       </div>
       <img
         class="h-full w-full object-fill"
@@ -22,7 +33,7 @@
         alt="w"
       />
     </section>
-    <main class="px-6">
+    <main class="bg-Dark_Grey px-6 text-White">
       <section class="py-6">
         <h3 class="py-3 text-2xl">Kort om bogen</h3>
         <p class="pb-3">
@@ -35,7 +46,7 @@
       </section>
       <section id="First" class="grid grid-cols-2 gap-7">
         <div>
-          <h4 class="text-2xl">Kort om forfatteren</h4>
+          <h4 class="pb-3 text-2xl">Kort om forfatteren</h4>
           <p class="">
             Sten Simons har en lang foto-karriere bag sig. Det hele startede i
             00'erne, da han gik rundt i Pisserenden for at fotografere
@@ -76,7 +87,7 @@
       </section>
       <section id="Third">
         <h2 class="flex justify-center py-5 text-3xl">Uddrag af kapitler</h2>
-        <h4 class="pb-3 text-xl font-bold">
+        <h4 class="pb-3 text-lg font-bold">
           Kapitel 1 - Intro til street foto
         </h4>
         <p class="pb-3">
@@ -199,29 +210,42 @@
         />
       </section>
       <section id="Ninth">
-        <h4 class="pb-3 text-xl font-bold">Kapitel 7 - Kreative teknikker</h4>
-        <p>
+        <h4 class="pb-3 pt-3 text-xl font-bold">
+          Kapitel 7 - Kreative teknikker
+        </h4>
+        <p class="pb-3">
           De fleste af os skyder oftest digitalt fordi det er billigere og
           nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til
           digital street foto. I dette kapitel får du en række tips og tricks
           til digital street-foto.
         </p>
-        <img
-          src="Billeder/orestad-til-islands-brygge-pentax-auto-110-14.jpg"
-          alt=""
-        />
-        <img src="Billeder/agfa-genanvendeligt-kamera-35mm-8.jpg" alt="" />
+        <div class="">
+          <img
+            class="pb-3"
+            src="Billeder/orestad-til-islands-brygge-pentax-auto-110-14.jpg"
+            alt=""
+          />
+          <img src="Billeder/agfa-genanvendeligt-kamera-35mm-8.jpg" alt="" />
+        </div>
       </section>
       <section class="Seventh">
         <div>
-          <h4 class="pb-3 text-xl font-bold">Kapitel 8 - Kom helt tæt på!</h4>
-          <p>
+          <h4 class="py-3 text-xl font-bold">Kapitel 8 - Kom helt tæt på!</h4>
+          <p class="pb-3">
             Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt
             end digital. Det signalerer entusiasme. Nogle teknikker og
             fremgangsmåder egner sig bedst til analog street foto. I dette
             kapitel får du en række tips og tricks til analog street-foto.
           </p>
         </div>
+      </section>
+      <section>
+        <h3 class="text-lg">Stamdata</h3>
+        <p class="">Titel: Københavnerbilleder - en guide til hipster foto</p>
+        <p>Forfatter: Sten Simons</p>
+        <p>Antal sider: 344</p>
+        <p>Forlag: Mellem Linjerne</p>
+        <p>ISBN: 987-6-987654-32-1 Pris: 399.-</p>
       </section>
     </main>
   </body>
