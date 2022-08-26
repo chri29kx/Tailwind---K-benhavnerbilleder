@@ -17,7 +17,7 @@
       <div
         class="text-white absolute flex h-full w-full flex-col items-center justify-center"
       >
-        <h1 class="text-s justify-center text-White">
+        <h1 class="justify-center text-lg text-White md:text-3xl">
           Københavnerbilleder - en guide til hipster foto
         </h1>
         <h2 class="pb-6 text-White">af Sten Simons</h2>
@@ -28,10 +28,11 @@
         </button>
       </div>
       <img
-        class="h-full w-full object-fill"
+        class="h-full w-full md:hidden"
         src="Billeder/nikkormat-ft2-orestad-c-6.jpg"
         alt="w"
       />
+      <img class="sm: hidden md:inline" src="Billeder/Splash.jpg" alt="" />
     </section>
     <main class="bg-Dark_Grey px-6 text-White">
       <section class="py-6">
@@ -44,46 +45,52 @@
           inspirerende fotos. God læselyst!
         </p>
       </section>
-      <section id="First" class="grid grid-cols-2 gap-7">
-        <div>
+      <section id="First" class="grid-cols-2 gap-7 md:grid">
+        <div class="">
           <h4 class="pb-3 text-2xl">Kort om forfatteren</h4>
-          <p class="">
+          <p class="pb-3">
             Sten Simons har en lang foto-karriere bag sig. Det hele startede i
             00'erne, da han gik rundt i Pisserenden for at fotografere
-            ungdommens forfald.
+            ungdommens forfald. Det ledte til en række udstillinger, og blev
+            senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra
+            nattelivet.” Derefter tog karrieren fart: Han blev fotojournalist og
+            dokumenterede en masse dagligdagsstof fra Amager på dagbladet
+            “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og
+            har skrevet et utal af bøger, herunder bestsellerne Scener fra
+            S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for
+            evnesvage.
           </p>
+          <img
+            class="place-items-end sm:hidden md:inline"
+            src="Billeder/lomo-smena-20.jpg"
+            alt=""
+          />
         </div>
         <img src="Billeder/sten_simons.jpg" alt="" />
       </section>
       <div>
-        <p class="pb-3">
-          Det ledte til en række udstillinger, og blev senere til hans først
-          fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” Derefter tog
-          karrieren fart: Han blev fotojournalist og dokumenterede en masse
-          dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende
-          begyndte han at undervise i foto, og har skrevet et utal af bøger,
-          herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse,
-          og lærebogen Fotografering for evnesvage.
-        </p>
+        <p class="pb-3"></p>
       </div>
       <script type="module" src="./main.js"></script>
       <section id="Second" class="">
-        <img
-          src="Billeder/agfa-genanvendeligt-kamera-35mm-film-2-7.jpg"
-          alt=""
-        />
-        <div class="flex flex-col items-center justify-center pb-3">
-          <h3 class="pt-3 text-xl">Anmeldelse</h3>
-          <p class="py-3 font-bold">5 ud af 6 stjerner</p>
-          <p>
-            Københavnerbilleder er en grundig introduktion til at skyde billeder
-            med retro-kant. Hvad enten du er har arbejdet med foto siden
-            135-filmen kom på markedet, du kun har skudt digitalt eller er helt
-            nybegynder, er der masser af tips og tricks i bogen.
-          </p>
-          <p class="py-3">- Hanne Hovgaard, Berlingeren</p>
+        <div class="grid-cols-3 md:grid">
+          <img
+            src="Billeder/agfa-genanvendeligt-kamera-35mm-film-2-7.jpg"
+            alt=""
+          />
+          <div class="flex flex-col items-center justify-center pb-3">
+            <h3 class="pt-3 text-xl">Anmeldelse</h3>
+            <p class="py-3 font-bold">5 ud af 6 stjerner</p>
+            <p>
+              Københavnerbilleder er en grundig introduktion til at skyde
+              billeder med retro-kant. Hvad enten du er har arbejdet med foto
+              siden 135-filmen kom på markedet, du kun har skudt digitalt eller
+              er helt nybegynder, er der masser af tips og tricks i bogen.
+            </p>
+            <p class="py-3">- Hanne Hovgaard, Berlingeren</p>
+          </div>
+          <img src="Billeder/nikkormat-ft2-remiseparken-7.jpg" alt="" />
         </div>
-        <img src="Billeder/nikkormat-ft2-remiseparken-2.jpg" alt="" />
       </section>
       <section id="Third">
         <h2 class="flex justify-center py-5 text-3xl">Uddrag af kapitler</h2>

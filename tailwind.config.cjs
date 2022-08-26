@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      sm: "300px",
+      md: "768px",
+    },
     colors: {
       Grey: "#BDBDBD",
       Dark_Grey: "#7D7D7D",
