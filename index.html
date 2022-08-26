@@ -4,30 +4,42 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Serif:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Vite App</title>
     <script type="module" crossorigin src="./assets/main.ae54f498.js"></script>
-    <link rel="stylesheet" href="./assets/index.c7661922.css">
+    <link rel="stylesheet" href="./assets/index.a1f8b15d.css">
   </head>
-  <body class="grid place-items-center">
+  <body class="grid place-items-center bg-Light_Grey">
     <section id="IntroSection" class="relative w-full">
       <div
         class="text-white absolute flex h-full w-full flex-col items-center justify-center"
       >
-        <h1 class="text-2xl">
+        <h1 class="justify-center text-lg text-White md:text-3xl">
           Københavnerbilleder - en guide til hipster foto
         </h1>
-        <h2>af Sten Simons</h2>
+        <h2 class="pb-6 text-White">af Sten Simons</h2>
+        <button
+          class="rounded rounded-full bg-Darker_Grey py-2 px-4 font-bold tracking-wide text-White hover:bg-White hover:text-Darker_Grey"
+        >
+          Køb nu
+        </button>
       </div>
       <img
-        class="h-full w-full object-fill"
+        class="h-full w-full md:hidden"
         src="./assets/nikkormat-ft2-orestad-c-6.bb1334b5.jpg"
         alt="w"
       />
+      <img class="sm: hidden md:inline" src="./assets/Splash.f83c4701.jpg" alt="" />
     </section>
-    <main class="px-6">
+    <main class="bg-Dark_Grey px-6 text-White">
       <section class="py-6">
         <h3 class="py-3 text-2xl">Kort om bogen</h3>
-        <p class="pb-3">
+        <p class="grid-cols-2 pb-3 md:grid">
           Københavnerbilleder er de danske streetfotografers bibel: Det er en
           fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
           væsentlige aspekter af streetfotografering fra grundlæggende teknik
@@ -35,50 +47,60 @@
           inspirerende fotos. God læselyst!
         </p>
       </section>
-      <section id="First" class="grid grid-cols-2 gap-7">
-        <div>
-          <h4 class="text-2xl">Kort om forfatteren</h4>
-          <p class="">
+      <section id="First" class="grid-cols-2 gap-7 md:grid">
+        <div class="">
+          <h4 class="pb-3 text-2xl">Kort om forfatteren</h4>
+          <p class="pb-3">
             Sten Simons har en lang foto-karriere bag sig. Det hele startede i
             00'erne, da han gik rundt i Pisserenden for at fotografere
-            ungdommens forfald.
+            ungdommens forfald. Det ledte til en række udstillinger, og blev
+            senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra
+            nattelivet.” Derefter tog karrieren fart: Han blev fotojournalist og
+            dokumenterede en masse dagligdagsstof fra Amager på dagbladet
+            “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og
+            har skrevet et utal af bøger, herunder bestsellerne Scener fra
+            S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for
+            evnesvage.
           </p>
+          <img
+            class="place-items-end sm:hidden md:inline"
+            src="./assets/lomo-smena-20.7943bf5c.jpg"
+            alt=""
+          />
         </div>
         <img src="./assets/sten_simons.d67e66a0.jpg" alt="" />
       </section>
       <div>
-        <p class="pb-3">
-          Det ledte til en række udstillinger, og blev senere til hans først
-          fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” Derefter tog
-          karrieren fart: Han blev fotojournalist og dokumenterede en masse
-          dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende
-          begyndte han at undervise i foto, og har skrevet et utal af bøger,
-          herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse,
-          og lærebogen Fotografering for evnesvage.
-        </p>
+        <p class="pb-3"></p>
       </div>
       
       <section id="Second" class="">
-        <img
-          src="./assets/agfa-genanvendeligt-kamera-35mm-film-2-7.752e6509.jpg"
-          alt=""
-        />
-        <div class="flex flex-col items-center justify-center pb-3">
-          <h3 class="pt-3 text-xl">Anmeldelse</h3>
-          <p class="py-3 font-bold">5 ud af 6 stjerner</p>
-          <p>
-            Københavnerbilleder er en grundig introduktion til at skyde billeder
-            med retro-kant. Hvad enten du er har arbejdet med foto siden
-            135-filmen kom på markedet, du kun har skudt digitalt eller er helt
-            nybegynder, er der masser af tips og tricks i bogen.
-          </p>
-          <p class="py-3">- Hanne Hovgaard, Berlingeren</p>
+        <div class="grid-cols-3 md:grid">
+          <img
+            src="./assets/agfa-genanvendeligt-kamera-35mm-film-2-7.752e6509.jpg"
+            alt=""
+          />
+          <div class="flex flex-col items-center justify-center pb-3">
+            <h3 class="pt-3 text-xl">Anmeldelse</h3>
+            <p class="py-3 font-bold">5 ud af 6 stjerner</p>
+            <p class="px-6">
+              Københavnerbilleder er en grundig introduktion til at skyde
+              billeder med retro-kant. Hvad enten du er har arbejdet med foto
+              siden 135-filmen kom på markedet, du kun har skudt digitalt eller
+              er helt nybegynder, er der masser af tips og tricks i bogen.
+            </p>
+            <p class="py-3">- Hanne Hovgaard, Berlingeren</p>
+          </div>
+          <img
+            class=""
+            src="./assets/nikkormat-ft2-remiseparken-7.2ce0ba2c.jpg"
+            alt=""
+          />
         </div>
-        <img src="./assets/nikkormat-ft2-remiseparken-2.f1f45658.jpg" alt="" />
       </section>
       <section id="Third">
         <h2 class="flex justify-center py-5 text-3xl">Uddrag af kapitler</h2>
-        <h4 class="pb-3 text-xl font-bold">
+        <h4 class="pb-3 text-lg font-bold">
           Kapitel 1 - Intro til street foto
         </h4>
         <p class="pb-3">
@@ -88,56 +110,58 @@
           street-fotografer. Alt krydret med en masse gode eksempler på street
           fotos.
         </p>
-        <img
-          class="pb-3"
-          src="./assets/anamorfiske-landskaber-amager-faelled-4.ddb8dbce.jpg"
-          alt=""
-        />
-        <img
-          class="h-48 w-96 object-cover"
-          src="./assets/_6090022.0dc8e8da.jpeg"
-          alt=""
-        />
+        <div class="grid-cols-2 md:grid">
+          <img
+            class="pb-3 pr-4"
+            src="./assets/agfa-genanvendeligt-kamera-35mm-film-2-5.8db94d36.jpg"
+            alt=""
+          />
+          <img
+            class="pb-3 pr-4"
+            src="./assets/agfa-genanvendeligt-kamera-35mm-11.02f0e902.jpg"
+            alt=""
+          />
+        </div>
       </section>
       <section class="Fourth gap-8 py-5">
-        <div>
-          <h4 class="text-lg font-bold">Kapitel 2 - Om at skyde street</h4>
-          <p class="pb-3">
-            Hvad er street foto? Det handler i bund og grund om at skyde byens
-            liv og byens geometri (urban geometry). I dette kapitel får du en
-            grundig intro til hvad street foto er og et overblik over nogen af
-            de kendte street-fotografer. Alt krydret med en masse gode eksempler
-            på street fotos.
-          </p>
-        </div>
-        <div>
-          <h4 class="text-lg font-bold">
-            Kapitel 3 - Om at finde det rette motiv
-          </h4>
-          <p>
-            Indimellem er man heldig, andre gange kommer man hjem helt uden gode
-            motiver. Med et par tips og tricks til at finde de rette motiver,
-            stiger chancen gevaldigt for at fange de gode motiver.
-          </p>
+        <div class="grid-cols-2 md:grid">
+          <div>
+            <h4 class="text-lg font-bold">Kapitel 2 - Om at skyde street</h4>
+            <p class="pb-3">
+              Hvad er street foto? Det handler i bund og grund om at skyde byens
+              liv og byens geometri (urban geometry). I dette kapitel får du en
+              grundig intro til hvad street foto er og et overblik over nogen af
+              de kendte street-fotografer. Alt krydret med en masse gode
+              eksempler på street fotos.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold">
+              Kapitel 3 - Om at finde det rette motiv
+            </h4>
+            <p>
+              Indimellem er man heldig, andre gange kommer man hjem helt uden
+              gode motiver. Med et par tips og tricks til at finde de rette
+              motiver, stiger chancen gevaldigt for at fange de gode motiver.
+            </p>
+          </div>
         </div>
       </section>
       <section id="Fifth">
-        <img src="./assets/lomo-smena-20.7943bf5c.jpg" alt="" />
-        <div class="flex flex-col items-center justify-center pb-3">
-          <h3 class="pt-3 text-xl">Anmeldelse</h3>
-          <p class="py-3 font-bold">5 ud af 6 stjerner</p>
-          <p>
-            Københavnerbilleder er en grundig introduktion til at skyde billeder
-            med retro-kant. Hvad enten du er har arbejdet med foto siden
-            135-filmen kom på markedet, du kun har skudt digitalt eller er helt
-            nybegynder, er der masser af tips og tricks i bogen.
-          </p>
-          <p class="py-3">- Kim Kloggaard, Fotojournalen.dk</p>
+        <div class="grid-cols-2 md:grid">
+          <img class="pr-4" src="./assets/lomo-smena-20.7943bf5c.jpg" alt="" />
+          <div class="flex flex-col items-center justify-center pb-3">
+            <h3 class="pt-3 text-xl">Anmeldelse</h3>
+            <p class="py-3 font-bold">5 ud af 6 stjerner</p>
+            <p class="px-6">
+              Københavnerbilleder er en grundig introduktion til at skyde
+              billeder med retro-kant. Hvad enten du er har arbejdet med foto
+              siden 135-filmen kom på markedet, du kun har skudt digitalt eller
+              er helt nybegynder, er der masser af tips og tricks i bogen.
+            </p>
+            <p class="py-3">- Kim Kloggaard, Fotojournalen.dk</p>
+          </div>
         </div>
-        <img
-          src="./assets/orestad-til-islands-brygge-pentax-auto-110-8.f344e76e.jpg"
-          alt=""
-        />
       </section>
       <section id="Sixth">
         <div class="py-3">
@@ -150,81 +174,126 @@
             digital street foto. I dette kapitel får du en række tips og tricks
             til digital street-foto.
           </p>
+          <div class="grid-cols-2 md:grid">
+            <img
+              class="object-cover pr-4"
+              src="./assets/orestad-til-islands-brygge-pentax-auto-110-19.dee59f44.jpg"
+              alt=""
+            />
+
+            <img class="object-cover pr-4" src="./assets/BW.5cbe6eef.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="Seventh">
+        <div class="grid-cols-2 md:grid">
+          <div class="bg py-3 pr-4">
+            <h4 class="text-lg font-bold">Kapitel 5 - Analog street foto</h4>
+            <p>
+              Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt
+              end digital. Det signalerer entusiasme. Nogle teknikker og
+              fremgangsmåder egner sig bedst til analog street foto. I dette
+              kapitel får du en række tips og tricks til analog street-foto.
+            </p>
+          </div>
+          <div class="py-3 pb-3">
+            <h4 class="text-lg font-bold">Kapitel 6 - Om at skyde sort/hvid</h4>
+            <p>
+              Alle street-fotografer skyder sort/hvid nu og da. Nogen altid.
+              Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad
+              adskiller sort/hvid fra farvefotografering? Her får du en række
+              tips og tricks til sort/hvid fotografering.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div>
+        <section id="Ninth">
+          <h4 class="pb-3 pt-3 text-xl font-bold">
+            Kapitel 7 - Kreative teknikker
+          </h4>
+          <p class="pb-3">
+            De fleste af os skyder oftest digitalt fordi det er billigere og
+            nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til
+            digital street foto. I dette kapitel får du en række tips og tricks
+            til digital street-foto.
+          </p>
+          <div class="">
+            <img
+              class="pb-3"
+              src="Billeder/orestad-til-islands-brygge-pentax-auto-110-14.jpg"
+              alt=""
+            />
+            <img src="Billeder/agfa-genanvendeligt-kamera-35mm-8.jpg" alt="" />
+          </div>
+        </section>
+        <section class="Seventh">
+          <div>
+            <h4 class="py-3 text-xl font-bold">Kapitel 8 - Kom helt tæt på!</h4>
+            <p class="pb-3">
+              Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt
+              end digital. Det signalerer entusiasme. Nogle teknikker og
+              fremgangsmåder egner sig bedst til analog street foto. I dette
+              kapitel får du en række tips og tricks til analog street-foto.
+            </p>
+          </div>
+        </section>
+      </div> -->
+    </main>
+    <div class="to-Ligt_grey bg-gradient-to-b from-Dark_Grey to-Light_Grey">
+      <section id="Eighth">
+        <div class="grid-cols-3 px-6 md:grid">
           <img
-            class="h-48 w-96 object-cover"
-            src="./assets/orestad-til-islands-brygge-pentax-auto-110-19.dee59f44.jpg"
+            src="./assets/orestad-til-islands-brygge-pentax-auto-110.01769bc7.jpg"
+            alt=""
+          />
+          <div
+            class="flex flex-col items-center justify-center pb-3 text-White"
+          >
+            <h3 class="pt-3 text-xl">Anmeldelse</h3>
+            <p class="py-3 font-bold">6 ud af 6 stjerner</p>
+            <p class="px-6">
+              Sten Simons kan det der - og han bliver bedre og bedre. Stens
+              tredje fotobog er klart den bedste - her er han for alvor i sit
+              rette element, meget bedre end “studiefotografering som
+              begyndere.” Tillykke - godt arbejde.
+            </p>
+            <p class="py-3">- Volmer Hansen, Lukkertiden.dk</p>
+          </div>
+          <img
+            src="./assets/orestad-til-islands-brygge-pentax-auto-110-24.52e5a27b.jpg"
             alt=""
           />
         </div>
-        <img
-          class="h-48 w-96 object-cover"
-          src="./assets/_6090016.7b0503da.jpeg"
-          alt=""
-        />
       </section>
-      <section class="Seventh">
-        <div class="bg py-3">
-          <h4 class="text-lg font-bold">Kapitel 5 - Analog street foto</h4>
-          <p>
-            Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt
-            end digital. Det signalerer entusiasme. Nogle teknikker og
-            fremgangsmåder egner sig bedst til analog street foto. I dette
-            kapitel får du en række tips og tricks til analog street-foto.
-          </p>
+    </div>
+
+    <section>
+      <div class="grid-cols-3 md:grid">
+        <img src="./assets/kobenhavnerbilleder-sten-simons.471c6653.jpg" alt="" />
+        <img src="./assets/kobenhavnerbilleder_aaben_venstre.28682faf.jpg" alt="" />
+        <img src="./assets/kobenhavnerbilleder_oppefra.e13bfe7e.jpg" alt="" />
+      </div>
+    </section>
+    <footer class="bg-Light_Grey">
+      <div class="md:flex">
+        <div class="bg-Light_Grey px-6 text-Darker_Grey">
+          <h3 class="text-lg">Stamdata</h3>
+          <p class="">Titel: Københavnerbilleder - en guide til hipster foto</p>
+          <p>Forfatter: Sten Simons</p>
+          <p>Antal sider: 344</p>
+          <p>Forlag: Mellem Linjerne</p>
+          <p>ISBN: 987-6-987654-32-1 Pris: 399.-</p>
         </div>
-        <div class="pb-3">
-          <h4 class="text-lg font-bold">Kapitel 6 - Om at skyde sort/hvid</h4>
-          <p>
-            Alle street-fotografer skyder sort/hvid nu og da. Nogen altid.
-            Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad
-            adskiller sort/hvid fra farvefotografering? Her får du en række tips
-            og tricks til sort/hvid fotografering.
-          </p>
-        </div>
-      </section>
-      <section id="Eighth">
-        <img src="./assets/lomo-smena-15.4d091af3.jpg" alt="" />
-        <div class="flex flex-col items-center justify-center pb-3">
-          <h3 class="pt-3 text-xl">Anmeldelse</h3>
-          <p class="py-3 font-bold">6 ud af 6 stjerner</p>
-          <p>
-            Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje
-            fotobog er klart den bedste - her er han for alvor i sit rette
-            element, meget bedre end “studiefotografering som begyndere.”
-            Tillykke - godt arbejde.
-          </p>
-          <p class="py-3">- Volmer Hansen, Lukkertiden.dk</p>
-        </div>
-        <img
-          src="./assets/orestad-til-islands-brygge-pentax-auto-110-16.479078ce.jpg"
-          alt=""
-        />
-      </section>
-      <section id="Ninth">
-        <h4 class="pb-3 text-xl font-bold">Kapitel 7 - Kreative teknikker</h4>
-        <p>
-          De fleste af os skyder oftest digitalt fordi det er billigere og
-          nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til
-          digital street foto. I dette kapitel får du en række tips og tricks
-          til digital street-foto.
-        </p>
-        <img
-          src="./assets/orestad-til-islands-brygge-pentax-auto-110-14.821cb105.jpg"
-          alt=""
-        />
-        <img src="./assets/agfa-genanvendeligt-kamera-35mm-8.f9d13fd7.jpg" alt="" />
-      </section>
-      <section class="Seventh">
         <div>
-          <h4 class="pb-3 text-xl font-bold">Kapitel 8 - Kom helt tæt på!</h4>
-          <p>
-            Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt
-            end digital. Det signalerer entusiasme. Nogle teknikker og
-            fremgangsmåder egner sig bedst til analog street foto. I dette
-            kapitel får du en række tips og tricks til analog street-foto.
-          </p>
+          <button
+            class="rounded rounded-full bg-Darker_Grey py-2 px-4 font-bold tracking-wide text-White hover:bg-White hover:text-Darker_Grey"
+          >
+            Køb nu
+          </button>
         </div>
-      </section>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>
